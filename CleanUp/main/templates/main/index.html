@@ -1,8 +1,25 @@
-{% extends "main/layout.html" %}
+{% extends 'main/layout.html' %}
 
 {% block body %}
-    <body>
-        <h1>Home</h1>
-        <p>Welcome to the CleanUp project!</p>
-    </body>
+<body>
+
+    <div class="homeText" id="homeLarge">
+        Clean Up.
+    </div>
+
+    <div class="homeText" id="homeSmall">
+        Manage your job applicatons.
+    </div>
+
+    <div class="homeButtonContainer">
+        <div class="homeButton" id="homeLogin">
+            <a href="https://www.google.com/">Login</a>
+        </div>
+    
+        <div class="homeButton" id="homeSignIn">
+            <a href="https://www.google.com/">Sign Up</a>
+        </div>
+    </div>
+
+</body>
 {% endblock %}

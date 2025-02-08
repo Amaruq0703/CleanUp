@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.homeText {
+    color: white;
+    text-align: center;
+    positon: fixed;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+#homeLarge {
+    font-size: 300px;
+    font-weight: 700;
+}
+
+#homeSmall {
+    font-size: 100px;
+    font-weight: 200;
+}
+
+.homeButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    border: 0px solid white;
+    border-radius: 5px;
+    padding: 50px 50px;
+    background-color: rgba(240, 238, 255, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.homeButton {
+    background-color: rgb(90, 79, 207);
+    color: white;
+    border: 0px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.homeButton a {
+    color: white;
+    text-decoration: none;
+}
+
+.homeButton:hover {
+    background-color: rgb(0, 0, 0);
+    scale: 1.1;
+}
+
+.homeButton:hover a {
+    color: rgb(90, 79, 207);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
