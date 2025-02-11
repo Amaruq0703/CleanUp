@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+
+{% block body %}
+
+
+    <div class="loginContainer">
+        <div class="loginText">
+            Login
+        </div>
+
+        <form class="loginForm" action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            
+            <input class="loginInput" type="text" name="username" placeholder="Username">
+        
+        
+            <input class="loginInput" type="password" name="password" placeholder="Password">
+        
+        
+            <button class="loginButton" type="submit">Login</button>
+            
+        </form>
+    </div>
+
+
+{% endblock %}
+
+{% block script %}
+    {% if error %}
+        <script>
+            alert("{{ error }}");
+        </script>
+    {% endif %}
+
+{% endblock %}

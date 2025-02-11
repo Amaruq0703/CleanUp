@@ -1,7 +1,7 @@
 {% extends 'main/layout.html' %}
 
 {% block body %}
-<body>
+
 
     <div class="homeText" id="homeLarge">
         Clean Up.
@@ -12,14 +12,14 @@
     </div>
 
     <div class="homeButtonContainer">
-        <div class="homeButton" id="homeLogin">
-            <a href="https://www.google.com/">Login</a>
-        </div>
+        <a href="{% url 'login' %}" class="homeButton" id="homeLogin">
+            Login
+        </a>
     
-        <div class="homeButton" id="homeSignIn">
-            <a href="https://www.google.com/">Sign Up</a>
-        </div>
+        <a href="{% url 'signup' %}" class="homeButton" id="homeSignIn">
+            Sign Up
+        </a> 
     </div>
 
-</body>
+
 {% endblock %}

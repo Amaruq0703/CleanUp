@@ -9,9 +9,21 @@
     <link rel="stylesheet" href="{% static 'main/styles.css' %}">
 
 </head>
+    <body>
+    <div class="navbar">
+        <ul>
+            <li class="navbar-txt">CleanUp.</li>
+            <li><a class="navbar-link" href="{% url 'index' %}">Home</a></li>
+            <li><a class="navbar-link" href="#">About</a></li>
+            <li><a class="navbar-link" href="#">Extension</a></li>
+            <li><a class="navbar-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+
     {% block body %}
     {% endblock %}
 
+    </body>
     {% block script %}
     {% endblock %}
 </html>
